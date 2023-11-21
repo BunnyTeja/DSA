@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+div{
+    border: 1px solid gray;
+    text-align: center;
+    float: left;
+    height: 200px;
+    margin: 20px;
+    width: 45%;
+    background-color: #f1f1f1;
+}
+h1{
+    color: red;
+    background-color: yellow;
+}
+h2{
+    text-align: center;
+}
+img{
+    width: 25px;
+    height: 25px
+}
+button{
+    width: 150px;
+    background-color: gray;
+    color: white
+}
+button:hover{
+    background-color: white;
+    color:gray
+}

@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            home page
+        </title>
+        <link rel="stylesheet" href="{% static "stylesheets/style.css" %}" />
+    </head>
+    <body>
+        <h2><img src="{% static "images/profilepic.jpg" %}" width = 100 height = 100 alt="Image not found"> Bunny </h2>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class = "module">
+            <h1>ADMISSIONS</h1><br>
+            <a href="/admissions/newadm"><button type="button" name="button">Add Admission</button><br><br>
+            <a href="/admissions/admreport"><button type="button" name="button">Admission Report</button><br><br>
+        </div>
+        <div class = "module">
+            <h1>FINANCE</h1><br>
+            <a href="/finance/feecoll"><button type="button" name="button">Fee Collection</button><br><br>
+            <a href="/finance/collectionsreport"><button type="button" name="button">Fee Collection Report</button><br><br>
+            <a href="/finance/duesreport"><button type="button" name="button">Fee Dues Report</button>
+        </div>
+    </body>
+</html>

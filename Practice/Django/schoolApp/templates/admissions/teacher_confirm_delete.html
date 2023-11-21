@@ -1,0 +1,13 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form method="POST">
+            Are you sure to delete <br><br>
+        <button type="submit" value="confirm">confirm</button>
+        {%csrf_token%}
+        </form>
+        <br>
+        <a href="admissions/teacherslist"><button type="button" value="cancel">cancel</button></a>
+    </body>
+</html>

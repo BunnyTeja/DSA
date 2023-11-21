@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Teachers report page
+        </title>
+    </head>
+    <body>
+        <h1>Hello this is teachers report page</h1>
+        <table border="1">
+            <tr>
+                <th>id</th>
+                <th>Teacher name</th>
+                <th>exp</th>
+                <th>subject</th>
+                <th>contact</th>
+                <th>Actions</th>
+            </tr>
+        {% for s in teacher_list%} 
+        <!-- teacher_list is the object that is created by the class bases listview 
+            which contains the teacher objects -->
+        <tr>
+            <th><a href="/admissions/getteacherdetail/{{s.id}}">{{s.id}}</a></th>
+            <th>{{s.name}}</th>
+            <th>{{s.exp}}</th>
+            <th>{{s.subject}}</th>
+            <th>{{s.contact}}</th>
+            <th><a href="/admissions/deleteteacher/{{s.id}}">delete</a>&nbsp;
+                <a href="/admissions/updateteacher/{{s.id}}">update</a></th>
+        </tr>
+        {% endfor %}  
+    </table>  
+    </body>
+</html>
